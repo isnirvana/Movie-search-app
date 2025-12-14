@@ -1,17 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/icons/favicon.png"
     />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js"></script>
     <title>Watch</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1 class="logo__name">WATCH</h1>
+      </div>
+      <div class="home">
+        <img
+          src="./assets/images/icons/house-solid.svg"
+          alt="home"
+          class="home__image"
+        />
+        <div class="home__name">HOME</div>
+      </div>
+      <div class="search">
+        <img
+          src="./assets/images/icons/magnifying-glass-solid.svg"
+          alt="search"
+          class="search__image"
+        />
+        <div class="search__name">SEARCH</div>
+      </div>
+    </header>
+    <main>
+      <div class="movie-backdrop">
+        <img
+          src="./assets/images/backdrop-images/sixty-minutes.jpg"
+          alt="backdrop"
+          class="movie-backdrop__image"
+        />
+      </div>
+      <div class="movie-info">
+        <div class="movie-info__title">Lift</div>
+        <div class="movie-info__details">
+          <div class="year">2014</div>
+          .
+          <div class="runtime">2h 12m</div>
+        </div>
+        <div class="movie-info__genre">Science Fiction, Action-Adventure</div>
+        <div class="movie-info__buttons">
+          <button class="movie-info__button movie-info__button--play">
+            <img src="./assets/images/icons/play-solid.svg" alt="play" />
+            PLAY
+          </button>
+          <button class="movie-info__button movie-info__button--trailer">
+            TRAILER
+          </button>
+          <button class="movie-info__button movie-info__button--watchlist">
+            <img src="./assets/images/icons/plus-solid.svg" alt="watchlist" />
+          </button>
+        </div>
+        <div class="movie-info__overview">
+          The fragile peace between genetically enhanced apes and what remains
+          of man is threatened in the thrilling next chapter of the Planet of
+          the Apes
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <div class="nav">
+        <div class="sug1"><a href="#">SUGGESTED</a></div>
+        <div class="sug"><a href="#">WATCHING</a></div>
+        <div class="sug"><a href="#">WATCHLIST</a></div>
+      </div>
+      <hr />
+      <section class="suggested"></section>
+      <!-- <section class="popular"> -->
+      <!-- <div class="card-info">
+          <div class="card-info__title">${el.title}</div>
+          <div class="card-info-details">
+            <div class="card-info__year">
+              ${newData.release_date.slice( 0, -6 )}
+            </div>
+            <span>•</span>
+            <div class="card-info__runtime">${newData.runtime}m</div>
+            <span>•</span>
+            <div class="card-info__type">${newData.status}</div>
+            <div class="card-info__overview">${newData.overview}m</div>
+          </div>
+          <button class="card-info__button">SELECT</button>
+        </div>
+        <img
+        src="./assets/images/backdrop-images/sixty-minutes.jpg"
+        alt="card"
+        class="card__image"
+        />
+        <div class="card-overlay"></div> -->
+      <!-- </section> -->
+    </main>
+    <div class="iframe"></div>
+    <div class="iframe-overlay"></div>
+    <div class="movie-search">
+      <div class="search-container">
+        <input type="text" placeholder="search here" />
+      </div>
+      <div class="movie-search-info"></div>
+    </div>
+  </body>
 </html>
